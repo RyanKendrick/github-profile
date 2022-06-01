@@ -4,4 +4,4 @@ Github Profile Clone
 ### Run locally:
 
 `npm install`<br/>
-`npm run dev`
+`npm start`
