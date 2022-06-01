@@ -1,6 +1,6 @@
 Github Profile Clone
 -----------
-### See demo [here](https://www.google.com).
+### See demo [here](https://github-profile-assignment.herokuapp.com/).
 ### Run locally:
 
 `npm install`<br/>
