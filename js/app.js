@@ -73,7 +73,7 @@ class App extends HTMLElement {
                     this.shadowRoot.getElementById("header-avatar").src = data.avatar_url
                     this.shadowRoot.getElementById("list-length").innerHTML = `
                         <hr>
-                        <div>${data.public_repos} results for public repositories</div>
+                        <div class="repo-count"><b>${data.public_repos}</b> results for <b>public</b> repositories</div>
                         <hr>
                     `
                     this.shadowRoot.getElementById("name").innerHTML = data.name
@@ -187,7 +187,7 @@ class App extends HTMLElement {
                     ${data.slice(0, 20).map((repo) => (
                         `
                         <link rel="stylesheet" type="text/css" href="languages.css" media="screen" />
-                        <h3>${repo.name}</h3>
+                        <div class="repo-title">${repo.name}</div>
                         <div class="repo-info">
                             <div class="repo-subtitles">
                                 <div class=${languageColor(repo.language)} id="language-icon"></div>
